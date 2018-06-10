@@ -3,3 +3,5 @@
 <script>
    location.href = "/mvProject/main/index.do";
 </script>
+
+//Test
