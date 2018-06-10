@@ -331,7 +331,7 @@
                            <img src="../res/image/movies/ticketingBtn2.png"
                               class="ticketIcon">
                         <input type='hidden' class='movieName${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}'>
-                        <input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}.jpg'>
+                        <input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].moviepostimg}'>
                         <input type='hidden' class='movieGrade${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movieagelimit}'>
                      </div>
 
