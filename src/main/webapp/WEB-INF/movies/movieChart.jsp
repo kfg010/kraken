@@ -156,7 +156,7 @@
 									<a
 										href="/mvProject/movieDetail/movieDetail.do?seq=${movieplatformDTO[status.index].seq}">
 										<img
-										src="../res/image/moviePoster/${movieplatformDTO[status.index].movienameforkr}.jpg"
+										src="../res/image/moviePoster/${movieplatformDTO[status.index].moviepostimg}"
 										class="boxoffice_moviePoster"
 										onERROR="this.src='../res/image/moviePoster/poster_preparing.jpg'">
 									</a>
@@ -210,7 +210,7 @@
                            <img src="../res/image/movies/ticketingBtn2.png"
                               class="ticketIcon">
                         <input type='hidden' class='movieName${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}'>
-                        <input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}.jpg'>
+                        <input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].moviepostimg}'>
                         <input type='hidden' class='movieGrade${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movieagelimit}'>
                      </div>
 
