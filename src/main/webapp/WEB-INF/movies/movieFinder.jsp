@@ -501,7 +501,7 @@
 												onERROR="this.src='../res/image/moviePoster/onerror_age.png'">
 											<a
 												href="/mvProject/movieDetail/movieDetail.do?seq=${MovieplatformDTO[status.index].seq}">
-												<img src="../res/image/moviePoster/${boxoffice.movieNm}.jpg"
+												<img src="../res/image/moviePoster/${movieplatformDTO[status.index].moviepostimg}"
 												class="boxoffice_moviePoster"
 												onERROR="this.src='../res/image/moviePoster/poster_preparing.jpg'">
 											</a>
@@ -558,7 +558,7 @@
                            		<img src="../res/image/movies/ticketingBtn2.png"
                               		class="ticketIcon">
                         		<input type='hidden' class='movieName${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}'>
-                        		<input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}.jpg'>
+                        		<input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].moviepostimg}'>
                         		<input type='hidden' class='movieGrade${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movieagelimit}'>
                      		</div>
 
@@ -608,7 +608,6 @@ $('body').on('click', '.buyTicket_icon', function(){
 
 
 					<!-- ------------Movie Chart(No.4~No.7)----------------------------- -->
-
 					<div id="MovieSet2">
 						<c:if
 							test="${not empty dailyResult.boxOfficeResult.dailyBoxOfficeList}">
@@ -627,7 +626,7 @@ $('body').on('click', '.buyTicket_icon', function(){
 												onERROR="this.src='../res/image/moviePoster/onerror_age.png'">
 											<a
 												href="/mvProject/movieDetail/movieDetail.do?seq=${MovieplatformDTO[status.index].seq}">
-												<img src="../res/image/moviePoster/${boxoffice.movieNm}.jpg"
+												<img src="../res/image/moviePoster/${movieplatformDTO[status.index].moviepostimg}"
 												class="boxoffice_moviePoster"
 												onERROR="this.src='../res/image/moviePoster/poster_preparing.jpg'">
 											</a>
@@ -684,7 +683,7 @@ $('body').on('click', '.buyTicket_icon', function(){
                            					<img src="../res/image/movies/ticketingBtn2.png"
                               				class="ticketIcon">
                         				<input type='hidden' class='movieName${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}'>
-                        				<input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movienameforkr}.jpg'>
+                        				<input type='hidden' class='moviePoster${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].moviepostimg}'>
                         				<input type='hidden' class='movieGrade${movieplatformDTO[status.index].seq}' value='${movieplatformDTO[status.index].movieagelimit}'>
                      				</div>
 
