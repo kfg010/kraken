@@ -104,7 +104,7 @@ public class MoviePointController{
          for(int i = 0 ; i < array.size(); i++){
             JSONObject entity = (JSONObject)array.get(i);
             String movieNm = entity.get("movieNm").toString();
-            String movieNm2 = movieNm.replaceAll(":", "");
+            String movieNm2 = movieNm.replaceAll(":", ":");
             String rank = entity.get("rank").toString();
             int audiCnt = Integer.parseInt(entity.get("audiCnt").toString());
             

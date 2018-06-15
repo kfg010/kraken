@@ -20,6 +20,4 @@ public interface TheatersDAO {
    public List<TimeScheduleDTO> getDateInfo(String branch);
    
       
-   
-
 }
